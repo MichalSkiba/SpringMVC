@@ -3,7 +3,7 @@ package com.michal.SpringMVC.Model;
 import com.michal.SpringMVC.Validator.ProductId;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.validation.constraints.*;
+import jakarta.validation.constraints.*;
 import java.math.BigDecimal;
 
 

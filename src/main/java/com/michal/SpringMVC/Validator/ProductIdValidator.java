@@ -6,8 +6,8 @@ import com.michal.SpringMVC.Service.ProduktService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 public class ProductIdValidator implements ConstraintValidator<ProductId, String> {
 
