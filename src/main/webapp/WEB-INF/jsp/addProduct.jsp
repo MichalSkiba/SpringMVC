@@ -1,5 +1,5 @@
 <%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
@@ -16,7 +16,7 @@
             <h1>Produkty</h1>
             <p>Dodaj produkty</p>
         </div>
-        <a href="<c:url value="/j_spring_security_logout" />" class="btn btn-danger btn-mini pull-right">wyloguj</a>
+        <form action="${pageContext.request.contextPath}/logout" method="post"><input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/><button type="submit" class="btn btn-danger btn-mini pull-right">Wyloguj</button></form>
     </div>
 </section>
 <section class="container">

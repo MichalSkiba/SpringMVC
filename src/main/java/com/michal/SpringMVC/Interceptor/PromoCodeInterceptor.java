@@ -1,11 +1,11 @@
 package com.michal.SpringMVC.Interceptor;
 
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+import org.springframework.web.servlet.HandlerInterceptor;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
-public class PromoCodeInterceptor extends HandlerInterceptorAdapter {
+public class PromoCodeInterceptor implements HandlerInterceptor {
     private String promoCode;
     private String errorRedirect;
     private String offerRedirect;
